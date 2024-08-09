@@ -3,74 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/yourcode.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Document</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      a {
-        text-decoration: none;
-      }
-      h1 {
-        color: black;
-        font-size: 1.5rem;
-      }
-      header {
-        height: 100vh;
-        border: 3px solid black;
-        border-radius: 10px;
-        max-width: max-content;
-        padding: 10px;
-      }
-      .header-title {
-        text-align: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-      }
-      .profile-img {
-        width: 200px;
-        height: 200px;
-      }
-      .profile-image {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-      }
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
-      /* navbar */
-      nav {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        height: max-content;
-        /* border: 3px solid red; */
-        padding-top: 10px;
-      }
-      .nav-link {
-        text-transform: capitalize;
-        color: black;
-        text-align: center;
-        font-weight: 700;
-        border: 3px solid red;
-        padding: 10px;
-        &:hover {
-          color: purple;
-        }
-        &:visited {
-          background-color: yellow;
-        }
-        &:focus {
-          background-color: blue;
-          color: red;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
   </head>
   <body>
     <header>
@@ -81,8 +20,8 @@
         <h1 class="header-title">Akash Kurdekar</h1>
       </a>
       <nav>
-        <a href="#" class="nav-link">
-          <i class="fa-solid fa-house">s</i>
+        <a href="#home" class="nav-link">
+          <i class="fa-solid fa-house"></i>
           <span>Home</span>
         </a>
         <a href="#about" class="nav-link">about</a>
@@ -91,5 +30,125 @@
         <a href="#contact" class="nav-link">contact</a>
       </nav>
     </header>
+    <div class="main-container">
+      <main>
+        <section id="home" class="home">
+          <!-- <img src="./pexels-wangming-photo-115695-354939.jpg" alt="" /> -->
+          <h1>Akash Kurdekar</h1>
+
+          <div class="typing">
+            <h1>i'm a&nbsp;</h1>
+            <span id="element" class="type-element"></span>
+          </div>
+
+          <div class="social-links">
+            <ul class="link-order">
+              <li class="link-list">
+                <a class="links" href=""><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="link-list">
+                <a class="links" href=""> <i class="fab fa-facebook"></i></a>
+              </li>
+              <li class="link-list">
+                <a class="links" href=""> <i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="link-list">
+                <a class="links" href=""> <i class="fab fa-github"></i></a>
+              </li>
+              <li class="link-list">
+                <a class="links" href=""> <i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <button class="hire-button">Hire me</button>
+          <div class="scrolldown">
+            <h4>Scroll down</h4>
+            <i class="fas fa-mouse"></i>
+          </div>
+        </section>
+
+        <section id="about" class="about">
+          <h1>About Me</h1>
+          <div class="about-container grid two-column">
+            <img src="profile.jpg" class="emoji-img profile-image" alt="" />
+            <div class="cv-con grid two-column">
+              <div class="text">
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore voluptates illo debitis voluptatibus, officiis
+                  perferendis. Dicta eveniet consequatur illum voluptatem iusto
+                  perferendis quia numquam recusandae.
+                </p>
+                <button class="download-btn">Download CV</button>
+              </div>
+              <div class="points">
+                <div class="skill">
+                  <div class="text">
+                    <span>Development</span><span>80%</span>
+                  </div>
+                  <input type="range" name="" id="" />
+                </div>
+                <div class="skill">
+                  <div class="text">
+                    <span>Development</span><span>80%</span>
+                  </div>
+                  <input type="range" name="" id="" />
+                </div>
+                <div class="skill">
+                  <div class="text">
+                    <span>Development</span><span>80%</span>
+                  </div>
+                  <input type="range" name="" id="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- <footer>
+      <div class="social-links">
+        <ul class="link-order">
+          <li class="link-list">
+            <i class>I</i>
+            <a class="links" href="">Instagram</a>
+          </li>
+          <li class="link-list">
+            <i class>F</i>
+            <a class="links" href="">facebook</a>
+          </li>
+          <li class="link-list">
+            <i class>T</i>
+            <a class="links" href="">twitter</a>
+          </li>
+          <li class="link-list">
+            <i class>G</i>
+            <a class="links" href="">github</a>
+          </li>
+          <li class="link-list">
+            <i class>L</i>
+            <a class="links" href="">Linkdin</a>
+          </li>
+        </ul>
+      </div>
+    </footer> -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "UI/UX Developer",
+          "Programmer",
+          "Photographer",
+          "Web Developer",
+        ],
+        typeSpeed: 50,
+        backSpeed: 50,
+        backDelay: 1000,
+        startDelay: 1000,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
